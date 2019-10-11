@@ -3,7 +3,7 @@ package lesson1;
 public class Human implements BarrierRunner {
     private String name;
     private int runLenght;
-    private  int jumpHeight;
+    private int jumpHeight;
 
     public Human(String name, int runLenght, int jumpHeight) {
         this.name = name;

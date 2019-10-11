@@ -3,7 +3,7 @@ package lesson1;
 public class Robot implements BarrierRunner {
     private String name;
     private int runLenght;
-    private  int jumpHeight;
+    private int jumpHeight;
 
     public Robot(String name, int runLenght, int jumpHeight) {
         this.name = name;

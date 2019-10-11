@@ -8,23 +8,20 @@ public class Wall implements Barrier {
     public Wall(int height) {
         this.height = height;
     }
-    public boolean doJump(BarrierRunner barrierRunner){
+
+
+    @Override
+    public boolean passBarrierBy(BarrierRunner barrierRunner) {
         int jampHeight = barrierRunner.jumpOverWall();
-        return jampHeight>=height;
+        if (jampHeight >= height)
+            System.out.println(barrierRunner.getName() + " перепрыгнул препятствие " + this.getHeight() + " см");
+        else
+            System.out.println(barrierRunner.getName() + " не перепрыгнул препятствие " + this.getHeight() + " см");
+        return jampHeight >= height;
     }
 
-    @Override
-    public boolean doRun(BarrierRunner barrierRunner) {
-        return false;
-    }
 
-    @Override
     public int getHeight() {
         return height;
-    }
-
-    @Override
-    public int getLenght() {
-        return 0;
     }
 }

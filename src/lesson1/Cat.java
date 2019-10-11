@@ -3,7 +3,7 @@ package lesson1;
 public class Cat implements BarrierRunner {
     private String name;
     private int runLenght;
-    private  int jumpHeight;
+    private int jumpHeight;
 
     public Cat(String name, int runLenght, int jumpHeight) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Cat implements BarrierRunner {
 
     @Override
     public int runOnRacetrack() {
-      return runLenght;
+        return runLenght;
     }
 
     @Override

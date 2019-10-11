@@ -9,25 +9,17 @@ public class Racetrack implements Barrier {
         this.lenght = lenght;
     }
 
-    @Override
     public int getLenght() {
         return lenght;
     }
 
     @Override
-    public boolean doJump(BarrierRunner barrierRunner) {
-        return false;
-    }
-
-    public boolean doRun(BarrierRunner barrierRunner){
+    public boolean passBarrierBy(BarrierRunner barrierRunner) {
         int runLenght = barrierRunner.runOnRacetrack();
-        return runLenght>=lenght;
+        if (runLenght >= lenght)
+            System.out.println(barrierRunner.getName() + " пробежал препятствие " + this.getLenght() + " м");
+        else
+            System.out.println(barrierRunner.getName() + " не пробежал препятствие" + this.getLenght() + " м");
+        return runLenght >= lenght;
     }
-
-    @Override
-    public int getHeight() {
-        return 0;
-    }
-
-
 }
