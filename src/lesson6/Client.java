@@ -18,6 +18,9 @@ public class Client {
             String s = null;
             while (true) {
                 s = bufferedReader.readLine();
+                if (s.equalsIgnoreCase("/end")){
+                    socket.close();
+                }
                 out.writeUTF(s);
             }
         } catch (IOException e) {
@@ -43,12 +46,15 @@ public class Client {
                     try {
                         strFromServer = in.readUTF();
                         System.out.println("Сообщение от сервера: " + strFromServer);
+                        if (strFromServer.equalsIgnoreCase("/end")) {
+                            socket.close();
+                            break;
+                        }
                     } catch (IOException e) {
                         e.printStackTrace();
-                    }
-                    if (strFromServer.equalsIgnoreCase("/end")) {
                         break;
                     }
+
                 }
             }
         }).start();
