@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="NetworkChatClient" external.linked.project.path="$USER_HOME$/Desktop/GeekBrains_Java2_2019_10_03/NetworkChatClient" external.root.project.path="$USER_HOME$/Desktop/GeekBrains_Java2_2019_10_03/NetworkChatClient" external.system.id="GRADLE" external.system.module.group="ru.geekbrains.java2" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/Desktop/GeekBrains_Java2_2019_10_03/NetworkChatClient">
+      <excludeFolder url="file://$USER_HOME$/Desktop/GeekBrains_Java2_2019_10_03/NetworkChatClient/.gradle" />
+      <excludeFolder url="file://$USER_HOME$/Desktop/GeekBrains_Java2_2019_10_03/NetworkChatClient/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
