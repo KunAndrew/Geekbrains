@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Geekbrains.iml" filepath="$PROJECT_DIR$/Geekbrains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkChatClient.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkChatClient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkChatClient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkChatClient.test.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkChatClient.test.iml" />
     </modules>
   </component>
 </project>
