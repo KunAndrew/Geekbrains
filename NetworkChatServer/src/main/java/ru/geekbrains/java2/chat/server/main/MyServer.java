@@ -64,6 +64,13 @@ public class MyServer {
             for (ClientHandler client : clients) {
                 client.sendMessage(message);
             }
-
+    }
+    public synchronized void privateMessage(String message,String nick,String authNick) {
+        for (ClientHandler client : clients) {
+            //client.sendMessage(message);
+            if (client.getClientName().equalsIgnoreCase(nick)) {
+                client.sendMessage(authNick + ": " + message);
+            }
+        }
     }
 }
