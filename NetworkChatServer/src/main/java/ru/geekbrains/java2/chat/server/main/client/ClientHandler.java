@@ -47,13 +47,8 @@ public class ClientHandler {
             if (clientMessage.equals("/end")) {
                 return;
             }
-            if (clientMessage.startsWith("/w")){
-                String mess[]=clientMessage.split(" ");
-                String nick=mess[1];
-                myServer.privateMessage(mess[2],nick,clientName);
-            }else {
                 myServer.broadcastMessage(clientName + ": " + clientMessage);
-            }
+
         }
     }
 
